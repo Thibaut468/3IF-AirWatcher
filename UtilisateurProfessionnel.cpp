@@ -60,6 +60,7 @@ UtilisateurProfessionnel & UtilisateurProfessionnel::operator = (const Utilisate
 	this->nom = unUtilisateurProfessionnel.nom;
 	this->prenom = unUtilisateurProfessionnel.prenom;
 	this->compteValide = unUtilisateurProfessionnel.compteValide;
+	return *this;
 } //----- Fin de operator =
 
 

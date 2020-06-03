@@ -97,6 +97,7 @@ NettoyeurAir & NettoyeurAir::operator = (const NettoyeurAir & unNettoyeurAir)
 // Algorithme :
 //
 {
+	return *this;
 } //----- Fin de operator =
 
 

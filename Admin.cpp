@@ -41,6 +41,7 @@ Admin & Admin::operator = (const Admin & unAdmin)
 // Algorithme :
 //
 {
+	return *this;
 } //----- Fin de operator =
 
 

@@ -76,6 +76,7 @@ CompagnieFournisseur & CompagnieFournisseur::operator = (const CompagnieFourniss
 // Algorithme :
 //
 {
+	return *this;
 } //----- Fin de operator =
 
 

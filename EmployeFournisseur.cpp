@@ -48,6 +48,7 @@ EmployeFournisseur & EmployeFournisseur::operator = (const EmployeFournisseur & 
 // Algorithme :
 //
 {
+	return *this;
 } //----- Fin de operator =
 
 

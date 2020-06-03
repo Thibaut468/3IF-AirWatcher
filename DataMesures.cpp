@@ -12,13 +12,8 @@
 //-------------------------------------------------------- Include système
 using namespace std;
 
-//------------------------------------------------------ Include personnel
-#include "DataMesures.h"
-#include "UtilisateurPrive.h"
-#include "EmployeAgenceGouvernementale.h"
-#include "EmployeFournisseur.h"
-#include "Admin.h"
-
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include <limits>
 #include <algorithm>
 #include <math.h>
@@ -26,6 +21,13 @@ using namespace std;
 #include<string.h>
 #include <set>
 #include <map>
+
+//------------------------------------------------------ Include personnel
+#include "DataMesures.h"
+#include "UtilisateurPrive.h"
+#include "EmployeAgenceGouvernementale.h"
+#include "EmployeFournisseur.h"
+#include "Admin.h"
 
 //------------------------------------------------------------- Constantes
 
@@ -1692,7 +1694,7 @@ DataMesures & DataMesures::operator = (const DataMesures & unDataMesures)
 // Algorithme :
 //
 {
-
+  return *this;
 } //----- Fin de operator =
 
 

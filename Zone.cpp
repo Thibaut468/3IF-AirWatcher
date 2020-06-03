@@ -11,11 +11,13 @@
 
 //-------------------------------------------------------- Include système
 using namespace std;
+#define _USE_MATH_DEFINES
 #include <iostream>
-
+#include <cmath>
 //------------------------------------------------------ Include personnel
 #include "Zone.h"
 #include "math.h"
+
 
 //------------------------------------------------------------- Constantes
 
@@ -57,6 +59,7 @@ Zone & Zone::operator = (const Zone & unZone)
 // Algorithme :
 //
 {
+	return *this;
 } //----- Fin de operator =
 
 

@@ -41,6 +41,7 @@ EmployeAgenceGouvernementale & EmployeAgenceGouvernementale::operator = (const E
 // Algorithme :
 //
 {
+	return *this;
 } //----- Fin de operator =
 
 
