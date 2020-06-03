@@ -42,6 +42,7 @@ AgenceGouvernementale & AgenceGouvernementale::operator = (const AgenceGouvernem
 // Algorithme :
 //
 {
+	return *this;
 } //----- Fin de operator =
 
 

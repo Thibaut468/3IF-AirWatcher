@@ -238,7 +238,7 @@ bool DataUtilisateurs::GererCompte(string mail, string nom, string prenom, strin
 // Algorithme :
 //
 {
-
+	return false;
 } //----- Fin de GererCompte
 
 vector<Utilisateur*> & DataUtilisateurs::GetUtilisateurs()

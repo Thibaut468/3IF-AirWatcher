@@ -203,27 +203,6 @@ bool DataCapteurs::SauvegarderCapteursPrives(string fichierCapteurs, string fich
     return true;
 }//----- Fin de SauvegarderCapteursPrives
 
-bool DataCapteurs::AjouterCapteur(Capteur & capteur,string idUtilisateurPrive)
-// Algorithme :
-//
-{
-    /*string Id=capteur.getID();
-	int nb=0;
-	unordered_map<string,Capteur*>::const_iterator got = mapIDCapteurs.find (newId);
-	while(got!=mapIDCapteurs.end() || newId=="") //tant que l'id existe dans la map, ou est défini sur null, on cherche un nouvel id
-	{
-		newId="Sensor"+to_string(mapIDCapteurs.size()+nb);
-		got = mapIDCapteurs.find (newId);
-		nb++;
-	}	
-	capteur.setID(newId);
-	mapCapteurUtilisateur.insert(make_pair(capteur.getID(),idUtilisateurPrive));
-
-    return mapIDCapteurs.insert(make_pair(capteur.getID(),&capteur)).second;
-    */
-} //----- Fin de AjouterCapteur
-
-
 bool DataCapteurs::ModifierCapteur(string idCapteur, double longitude, double latitude, string etat, string description)
 // Algorithme :
 //
@@ -266,6 +245,7 @@ DataCapteurs & DataCapteurs::operator = (const DataCapteurs & unDataCapteurs)
 // Algorithme :
 //
 {
+    return *this;
 } //----- Fin de operator =
 
 

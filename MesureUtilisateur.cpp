@@ -55,6 +55,7 @@ MesureUtilisateur & MesureUtilisateur::operator = (const MesureUtilisateur & unM
 // Algorithme :
 //
 {
+	return *this;
 } //----- Fin de operator =
 
 

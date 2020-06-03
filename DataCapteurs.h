@@ -60,13 +60,6 @@ public:
 	// Contrat :
 	// Methode a appeler systématiquement à la fin de chaque execution de l'application
 
-
-    bool AjouterCapteur(Capteur & capteur,string idUtilisateurPrive);
-	// Mode d'emploi :
-	// Ajoute un capteur aux deux map, et l'associe avec l'utilisateur en paramètre
-	// Contrat :
-	//
-
     bool ModifierCapteur(string idCapteur, double longitude, double latitude, string etat, string description);
 	// Mode d'emploi :
 	// permet de changer les informations du capteur correspondant à l'idCapteur

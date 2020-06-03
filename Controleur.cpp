@@ -102,7 +102,7 @@ void menuAction()
 
         affichage.AffichageFinConnexion("réussite");
 
-        while(choix!=7) // 7 = Déconnexion pour un admin
+        while(choix!=3) // 3 = Déconnexion pour un admin
         {
             choix = affichage.AfficherMenuActionAdmin();
 
@@ -132,26 +132,6 @@ void menuAction()
                 } break;
 
                 case 3 : {
-                    //Gérer un compte
-                    affichage.PreparationConsole("Gestion d'un compte - A FAIRE");
-                } break;
-
-                case 4 : {
-                    //Ajouter un capteur à l'application
-                    affichage.PreparationConsole("Ajout d'un capteur à l'application - A FAIRE");
-                } break;
-
-                case 5 : {
-                    //Modifier un capteur de l'application
-                    affichage.PreparationConsole("Modification d'un capteur de l'application - A FAIRE");
-                } break;
-
-                case 6 : {
-                    //Modifier son compte
-                    affichage.PreparationConsole("Modification de son compte - A FAIRE");
-                } break;
-
-                case 7 : {
                     //déconnexion
                 } break;
 
@@ -168,7 +148,7 @@ void menuAction()
 
         affichage.AffichageFinConnexion("réussite");
 
-        while(choix!=4) // 4 = Déconnexion pour un utilisateur privé
+        while(choix!=3) // 3 = Déconnexion pour un utilisateur privé
         {
             choix = affichage.AfficherMenuActionPrive();
 
@@ -211,11 +191,6 @@ void menuAction()
                 } break;
 
                 case 3: {
-                    // modifier compte
-                    affichage.PreparationConsole("Modification de son compte - A FAIRE");
-                } break;
-
-                case 4: {
                     // déconnexion
                 } break;
             }
@@ -233,7 +208,7 @@ void menuAction()
 
             
 
-            while(choix!=10) // 10 = Déconnexion pour un employé d'agence
+            while(choix!=8) // 8 = Déconnexion pour un employé d'agence
             {
                 choix = affichage.AfficherMenuActionAgenceGouv();
 
@@ -245,18 +220,13 @@ void menuAction()
                     } break;
 
                     case 2: {
-                        // état des capteurs
-                        affichage.PreparationConsole("Consultation de l'état des capteurs - A FAIRE");
-                    } break;
-
-                    case 3: {
                         // capteurs similaires
                         affichage.PreparationConsole("Consultation des capteurs similaires");
                         affichage.AfficherSaisirIdCapteur(donneesCapteurs.GetCapteurs(),donneesMesures,debutBench,finBench);
                         if(benchmarkActif) affichage.AfficherBenchmark(debutBench,finBench,"Consultation des capteurs similaires");
                     } break;
 
-                    case 4: {
+                    case 3: {
                         // données brutes
                         affichage.PreparationConsole("Consultation des données brutes de l'application");
                         Horodatage debut=affichage.SaisirDate("début");
@@ -268,7 +238,7 @@ void menuAction()
                         affichage.AfficherDonneesBrutes(debut,fin,donneesMesures.GetMesures());
                     } break;
 
-                    case 5: {
+                    case 4: {
                         // moyenne données brutes d'une zone sur une période donnée
                         affichage.PreparationConsole("Consultation des moyennes journalières des données sur une période et une zone choisie");
                         Horodatage debut=affichage.SaisirDate("début");
@@ -294,7 +264,7 @@ void menuAction()
                         if(benchmarkActif) affichage.AfficherBenchmark(debutBench,finBench,"Consultation des moyennes journalières des données sur une période et une zone choisie");
                     } break;
 
-                    case 6: {
+                    case 5: {
                         // moyenne qualité air d'une zone sur une période
                         affichage.PreparationConsole("Consultation des indices ATMO journaliers sur une période et une zone choisie");
                         Horodatage debut=affichage.SaisirDate("début");
@@ -312,7 +282,7 @@ void menuAction()
                         if(benchmarkActif) affichage.AfficherBenchmark(debutBench,finBench,"Consultation des indices ATMO journaliers sur une période et une zone choisie");
                     } break;
 
-                    case 7: {
+                    case 6: {
                         // labelliser données
                         affichage.PreparationConsole("Labellisation des données des utilisateurs privés");
                         cout<<"Labellisation en cours. Veuillez patienter ..."<<endl;
@@ -325,7 +295,7 @@ void menuAction()
                     } 
                     break;
 
-                    case 8: {
+                    case 7: {
                         // cluster capteurs similaires
                         affichage.PreparationConsole("Consultation des clusters de capteurs similaires");
                         int nbClassesMini = affichage.ClustersCapteursNbClassesMini(donneesCapteurs.GetCapteurs().size());
@@ -336,12 +306,7 @@ void menuAction()
                         if(benchmarkActif) affichage.AfficherBenchmark(debutBench,finBench,"Consultation des clusters de capteurs similaires");
                     } break;
 
-                    case 9: {
-                        // modifier compte
-                        affichage.PreparationConsole("Modification de son compte - A FAIRE");
-                    } break;
-
-                    case 10: {
+                    case 8: {
                         // déconnexion
                     } break;
                 }
@@ -365,7 +330,7 @@ void menuAction()
 
             vector<Mesure*>listMesureBonnes;
 
-            while(choix!=9) // 9 = Déconnexion pour fournisseur
+            while(choix!=8) // 8 = Déconnexion pour fournisseur
             {
                 choix = affichage.AfficherMenuActionFournisseur();
 
@@ -485,11 +450,6 @@ void menuAction()
                     } break;
 
                     case 8 : {
-                        //Modifier son compte
-                        affichage.PreparationConsole("Modification de son compte - A FAIRE");
-                    } break;
-
-                    case 9 : {
                         //déconnexion
                     } break;
                 }

@@ -14,6 +14,7 @@
 #include <limits>
 #include <vector>
 #include <time.h>
+#include <ctime>
 //------------------------------------------------------ Include personnel
 #include "Affichage.h"
 #include "Utilisateur.h"
@@ -291,9 +292,8 @@ int Affichage::AfficherMenuActionPrive()
 	cout<<"\n\n  "<<Souligner("Menu d'action")<<"\n\n";
 	cout<<"	1) Consulter mes données rentrées.\n";
 	cout<<"	2) Entrer une nouvelle donnée.\n";
-	cout<<"\n	3) Modifier mon compte.\n";
-	cout<<"	4) Me déconnecter.\n";
-	return SaisirChoix(4);
+	cout<<"\n 3) Me déconnecter.\n";
+	return SaisirChoix(3);
 } //----- Fin de AfficherMenuActionPrive
 
 int Affichage::AfficherMenuActionFournisseur()
@@ -311,9 +311,8 @@ int Affichage::AfficherMenuActionFournisseur()
 	cout<<"	5) Consulter les données brutes de l'application.\n";
 	cout<<"	6) Obtenir la moyenne des données brutes d'une zone (circulaire).\n";
 	cout<<"	7) Obtenir la qualité d'air moyenne d'une zone (circulaire).\n";
-	cout<<"\n	8) Modifier mon compte.\n";
-	cout<<"	9) Me déconnecter.\n";
-	return SaisirChoix(9);
+	cout<<"\n	8) Me déconnecter.\n";
+	return SaisirChoix(8);
 } //----- Fin de AfficherMenuActionFournisseur
 
 int Affichage::AfficherMenuActionAgenceGouv()
@@ -325,16 +324,14 @@ int Affichage::AfficherMenuActionAgenceGouv()
 	AfficherInformationsCompte();
 	cout<<"\n\n  "<<Souligner("Menu d'action")<<"\n\n";
 	cout<<"	1) Afficher la liste de tous les capteurs.\n";
-	cout<<"	2) Afficher l'état de tous les capteurs.\n";
-	cout<<"	3) Identifier les capteurs ayant un comportement similaire.\n";
-	cout<<"	4) Consulter les données brutes de l'application.\n";
-	cout<<"	5) Obtenir la moyenne des données brutes d'une zone (circulaire).\n";
-	cout<<"	6) Obtenir la qualité d'air moyenne d'une zone (circulaire).\n";
-	cout<<"	7) Labelliser les données des utilisateurs privés.\n";
-    cout<<"	8) Identifier les clusters de capteurs ayant un comportement similaire.\n";
-	cout<<"\n	9) Modifier mon compte.\n";
-	cout<<"	10) Me déconnecter.\n";
-	return SaisirChoix(10);
+	cout<<"	2) Identifier les capteurs ayant un comportement similaire.\n";
+	cout<<"	3) Consulter les données brutes de l'application.\n";
+	cout<<"	4) Obtenir la moyenne des données brutes d'une zone (circulaire).\n";
+	cout<<"	5) Obtenir la qualité d'air moyenne d'une zone (circulaire).\n";
+	cout<<"	6) Labelliser les données des utilisateurs privés.\n";
+    cout<<"	7) Identifier les clusters de capteurs ayant un comportement similaire.\n";
+	cout<<"\n	8) Me déconnecter.\n";
+	return SaisirChoix(8);
 } //----- Fin de AfficherMenuActionAgenceGouv
 
 int Affichage::AfficherMenuActionAdmin()
@@ -347,12 +344,8 @@ int Affichage::AfficherMenuActionAdmin()
 	cout<<"\n\n  "<<Souligner("Menu d'action")<<"\n\n";
 	cout<<"	1) Afficher la liste des comptes en attente.\n";
 	cout<<"	2) Valider/Refuser la création d'un compte.\n";
-	cout<<"	3) Gérer un compte.\n";
-	cout<<"	4) Ajouter un capteur à l'application.\n";
-	cout<<"	5) Modifier un capteur de l'application.\n";
-	cout<<"\n	6) Modifier mon compte.\n";
-	cout<<"	7) Me déconnecter.\n";
-	return SaisirChoix(7);
+	cout<<"\n 3) Me déconnecter.\n";
+	return SaisirChoix(3);
 } //----- Fin de AfficherMenuActionAdmin
 
 int Affichage::ClustersCapteursNbClassesMini(int nbClassesMax)

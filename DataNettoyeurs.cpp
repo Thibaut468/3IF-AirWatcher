@@ -671,6 +671,7 @@ DataNettoyeurs & DataNettoyeurs::operator = (const DataNettoyeurs & unDataNettoy
 //
 {
 	this->nettoyeurs = unDataNettoyeurs.nettoyeurs;
+	return *this;
 } //----- Fin de operator =
 
 
